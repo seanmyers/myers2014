@@ -37,20 +37,9 @@
           border-top: 1px white solid;
         }
       } 
-<<<<<<< HEAD
 
-=======
-      
->>>>>>> noel/master
-	/*NOEL'S COMMENT*/
-	
-	
       /* All form factors */
-      /* Main body and headings */
-      #about {
-	      border: 1px solid red;
-      }
-      
+      /* Main body and headings */      
       body {
         font-family: 'Open Sans', Helvetica,Arial,san-serif;		
       }
@@ -71,9 +60,10 @@
       }
       p.lead {
         padding-top: 1.5%;
-	      text-align: center;
-	      font-size: 24px;
-	      line-height: 30px;
+	    text-align: center;
+	    font-size: 24px;
+	    line-height: 30px;
+	    color: #666;
       }
       p.quotetext {
         font-style: italic;
@@ -82,11 +72,13 @@
         line-height: 48px;
         line-height: 1.5em;
         padding: 20px;
-        color: #2babe2;
+        /*color: #2babe2;*/
+        color: #888;
       }
       p {
         font-size: 18px;
 	    line-height: 24px;
+	    color: #333;
       }	
   
       /* Video pitch and action */
@@ -103,7 +95,6 @@
         background-color: #343434;
         padding: 3% 0%;
       }
- 
       .borderbox {
         margin-top: 40px;
         -webkit-border-radius: 5px;
@@ -126,6 +117,7 @@
       #pitch-list li {
         padding: 10px;
         line-height: 25px;
+        color: #333;
       }
 
       .details {
@@ -135,13 +127,44 @@
       #details-list li {
         padding: 10px;
         line-height: 25px;
+        color: #333;
       }
-
+      
+      /*FAQ*/
+      .accordian-heading {
+	      font-size: 1.2em;
+	      margin-bottom: 10px;
+      }
+      .collapse {
+	      font-size: 1.2em;  
+      }
+      .accordian-inner {
+	      padding-bottom: 5px;
+      }
+	  
+	  /*FORM*/
+	  .form-bkgd {
+		 background: #000;
+		 margin: 0 !important;
+	  }
+	  label {
+		  color: #fff;
+		  font-size: 1.3em;
+		  margin-top: 5px;
+	  }
+	  .controls > .span6 {
+		  padding: 20px;
+	  }
+	  .btn {
+	  	margin-left: 20px;
+	  }
+	  
       /* Marketing and Copy Footer */
      .modules-text > p {
 	      text-align: center;
 	      font-weight: bold;
 	      font-size: 1.5em;
+	      color: #2babe2;
       }
       .modules-text > ol > li {
 	      font-size: 1.2em;
@@ -151,10 +174,14 @@
         padding-bottom: 2.5%;
         text-align: justify;
       }
+      .copy-right {
+	   	padding: 30px;
+      }
       .asset {
         padding: 2.5% 0%;
       }
       .footer {
+      	background: #000;
         color: #cccccc;
         text-align: center;
       }
@@ -251,12 +278,12 @@
           <ol id="details-list">                                                                  
             <li>                                                                
               <strong>Asset inventory mapping and display</strong> - planners and engineers will
-                 be able view assets, lit buildings, data centers, potential customers,
-                 rights-of-way, conduits, and other features through a simple mapping interface;
+                 be able to view assets, lit buildings, data centers, potential customers,
+                 rights-of-way, conduits, and other features through a simple mapping interface.
             </li>                                                               
             <li>                                                                
               <strong>Demand generation and tracking</strong> - tools that allow sales people and
-              planners to estimate and track the demand for fiber in particular regions; and
+              planners to estimate and track the demand for fiber in particular regions.
             </li>                                                               
             <li>                                                                
               <strong>Project Design and Planning</strong> - Vetro will provide simple features
@@ -269,26 +296,6 @@
           </ol><!--details-list-->                                                              
         </div><!--span5 copy modules-text-->      
       </div><!--row-fluid section2-->
-
-       
-          <div class="row-fluid">
-            <div class="span8 offset3 social">
-              <!--AddThis Buttons begin -->
-              <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
-                <a class="addthis_button_preferred_1"></a>
-                <a class="addthis_button_preferred_2"></a>
-                <a class="addthis_button_compact"></a>
-                <a class="addthis_counter addthis_bubble_style"></a>
-              </div><!--addthis_toolbox addthis_default_style addthis_32x32_style-->
-              <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
-              <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-521a3697044f6bab"></script>
-              <!-- AddThis Button END -->                                       
-            </div><!--span8 offset3 social-->
-          </div><!--row-fluid -->
-          
-        </div>
-    
-
       
       <!-- Details about Vetro Features -->
       <div id="about" class="row-fluid details">
@@ -296,60 +303,49 @@
           <img class="img-polaroid" src="images/screenshot.png"> 
         </div><!--span5 offset1 copy-->
         
-      <!-- CUSTOMER QUOTE -->
       <div class="row-fluid">
+       <!-- CUSTOMER QUOTE -->
         <div class="span5 offset1 borderbox">
           <p class="quotetext">"As a small fiber network provider we will use Vetro to help identify and manage demand as well as for project design and cost estimation" - Fiber Network Engineer</p>
-        </div><!--span10 offset1 borderbox -->
+          
+          <!-- For this FAQ, we introduce JS using the accordian -->
+		  <!-- This brings in jquery.js and boostrap.js as dependencies -->
+		  <!-- http://twitter.github.io/bootstrap/javascript.html#collapse -->
+		  <div class="row-fluid faq">
+			  <div class="span10 offset1">
+				  <h3>FAQ</h3>
+				  <div class="accordian" id="accordian2">
+					  <div class="accordian-group">
+						  <div class="accordian-heading">
+							  <a class="accordian-toggle" data-toggle="collapse"data-parent="#accordian2" href="#collapseOne">What does Vetro mean?</a>
+						  </div>
+						  <div id="collapseOne" class="accordian-body collapse">
+							  <div class="accordian-inner">Vetro is the Italian word for glass, the material that makes up a fiber strand.</div>
+						  </div>
+						 </div>
+					  <div class="accordian-group">
+						  <div class="accordian-heading">
+							  <a class="accordian-toggle" data-toggle="collapse" data-parent="#accordian2" href="#collapseTwo">Do I need to license any additional software to run Vetro?</a>
+						  </div>
+						  
+						  <div id="collapseTwo" class="accordian-body collapse">
+							  <div class="accordian-inner">No, Vetro is an entirely secure, cloud-based application that is built using open source tools and does not require any 3rd party licensing.</div>
+						  </div>
+						  </div>
+						</div>
+					</div>
+				</div>
+        </div><!--span5 offset1 borderbox --> 
       </div><!--row-fluid-->
-      <!-- END CUSTOMER QUOTE -->
-        
-        
-      <!-- For this FAQ, we introduce JS using the accordian -->
-      <!-- This brings in jquery.js and boostrap.js as dependencies -->
-      <!-- http://twitter.github.io/bootstrap/javascript.html#collapse -->
-      <div class="row-fluid faq">
-        <div class="span10 offset1">
-          <h3>FAQ</h3>
-          <div class="accordian" id="accordian2">
-            <div class="accordian-group">
-              <div class="accordian-heading">
-                <a class="accordian-toggle" data-toggle="collapse"
-                  data-parent="#accordian2" href="#collapseOne">
-                  What does Vetro mean?
-                </a>
-              </div>
-              <div id="collapseOne" class="accordian-body collapse">
-                <div class="accordian-inner">Vetro is the Italian word for glass, 
-                    the material that makes up a fiber strand.</div>
-              </div>
-            </div>
-            <div class="accordian-group">
-              <div class="accordian-heading">
-                <a class="accordian-toggle" data-toggle="collapse" 
-                  data-parent="#accordian2" href="#collapseTwo">
-                  Do I need to license any additonal software to run Vetro?
-                </a>
-              </div>
-              <div id="collapseTwo" class="accordian-body collapse">
-                <div class="accordian-inner">
-                 No, Vetro is an entirely secure, cloud-based application that
-                 is built using opne source tools and does not require any 3rd
-                 party licensing.</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
+  
 	  <!-- INPUT FORM -->
-        <div class="span12 copy action">
+        <div class="span12 copy action form-bkgd">
           <div class="row-fluid">
             <form class="form-horizontal">
-              <div class="control-group">
+              <div class="control-group offset2">
                 <label class="control-label" for "inputEmail">Your Email</label>
                 <div class="controls">
-                  <input class= "span4" type="text" id="inputEmail"placeholder="john@email.com">
+                  <input class= "span6" type="text" id="inputEmail" placeholder="john@email.com">
                   <input class="btn btn-large btn-primary" type="submit" value="Send Me Information">
                 </div><!--controls-->
                 
