@@ -46,10 +46,18 @@
       .container {
 	      width: 100%;
       }
+
       h1 {
         font-size: 60px;
         color: #2babe2;
       }
+      
+      h2 {
+        font-size: 32px;
+        color: #2babe2;
+        text-align: center;
+      }
+      
       .heading, subheading {
         font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
 	    text-align: center;
@@ -261,44 +269,50 @@
       <div class="row-fluid pitch">
         <div class="span10 offset1 video"><img class="img-polaroid" src="images/mac.png"></div>
       </div> <!-- row-fluid pitch -->
-      
-      <div class="row-fluid section2">
-        <div class="span5 offset1 copy copy-right">
+     
+      <div class="row-fluid section2" id="about">
+        <div class="span10 offset1">
+          </br>
+          <h2>How will Vetro help me expand my fiber network business?</h2>
+        </div>
+        <div class="span5 offset1 copy">
           <p>Vetro makes it easier to target your fiber network investment and manage it for the long term.</p>
           
           <ul id="pitch-list">
-            <li>Track demand by neighborhood and drive interest to your project.</li>
-            <li>Create project scenarios and estimate project costs.</li>
-            <li>View your fiber network assets including cables, poles, material, and equipment.</li>
+            <li>View your fiber network assets including cables, poles, material,
+                and equipment.</li>
+            <li>Stimulate demand for your fiber service by engaging neighborhoods
+                with incentives and status updates.</li>
+            <li>Quickly assess the costs and benefits of network expansion projects.</li>
           </ul><!--pitch-list-->
         </div><!--span5 offset1 copy copy-right-->
-        
-        <div class="span5 copy modules-text">                             
-          <p>Vetro has three modules:</p>                                                                  
+        <div class="span5 copy copy-right modules-text">                             
+          <p>Vetro has three main features:</p>                                                                  
           <ol id="details-list">                                                                  
             <li>                                                                
-              <strong>Asset inventory mapping and display</strong> - planners and engineers will
-                 be able to view assets, lit buildings, data centers, potential customers,
-                 rights-of-way, conduits, and other features through a simple mapping interface.
+              <strong>Asset inventory mapping and display</strong> - planners
+                      and engineers can view network assets, lit buildings,
+                      data centers, potential customers, rights-of-way, conduits,
+                      and other features through a simple mapping interface.
             </li>                                                               
             <li>                                                                
-              <strong>Demand generation and tracking</strong> - tools that allow sales people and
-              planners to estimate and track the demand for fiber in particular regions.
+              <strong>Demand generation and tracking</strong> - sales people and
+                      planners can estimate and track the demand for their fiber
+                      services in particular neighborhoods and regions.
             </li>                                                               
             <li>                                                                
-              <strong>Project Design and Planning</strong> - Vetro will provide simple features
-              that allow fiber planners and engineers to design and plan new projects.
-              Design and planning includes estimating the type and quantity of  
-              equipment that is required, poles and/or conduits that can be used
-              to place the fiber, where splice points will occur, and what points
-              of presence (POPs) will be used.                                  
+              <strong>Project Design and Planning</strong> - fiber planners and
+              engineers can easily design and plan new projects including estimating
+              the type and quantity of equipment that is required, poles and/or
+              conduits that can be used to place the fiber, where splice points
+              will occur, and what points of presence (POPs) will be used.                                  
             </li>                                                               
           </ol><!--details-list-->                                                              
         </div><!--span5 copy modules-text-->      
       </div><!--row-fluid section2-->
       
       <!-- Details about Vetro Features -->
-      <div id="about" class="row-fluid details">
+      <div class="row-fluid details">
         <div class="span5 offset1 copy">
           <img class="img-polaroid" src="images/screenshot.png"> 
         </div><!--span5 offset1 copy-->
@@ -306,7 +320,9 @@
       <div class="row-fluid">
        <!-- CUSTOMER QUOTE -->
         <div class="span5 offset1 borderbox">
-          <p class="quotetext">"As a small fiber network provider we will use Vetro to help identify and manage demand as well as for project design and cost estimation" - Fiber Network Engineer</p>
+          <p class="quotetext">"As a small fiber network provider we will are using
+          Vetro to help expand the demand for our services and plan new projects
+          that maximize our investment" - Fiber Network Engineer</p>
           
           <!-- For this FAQ, we introduce JS using the accordian -->
 		  <!-- This brings in jquery.js and boostrap.js as dependencies -->
