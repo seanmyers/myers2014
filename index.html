@@ -454,7 +454,8 @@
     <script>
         $(function() {
             var email = $('#inputEmail');
-            $('#submit_form').on('click', function() {
+           
+            function submitForm() {
                 $.getJSON('http://demo.nbtsolutions.com/vetro/mail.php?callback=?',
                     { email: email.val() },
                     function(data) {
@@ -473,7 +474,15 @@
                             $('#server-noresponse').css({'display' : 'block'});
                         }
                 });
+            }
+
+            email.keypress(function(e) {
+                if(e.keyCode === 13) {
+                   submitForm(); 
+                   return false;
+                };
             });
+            $('#submit_form').on('click', submitForm);
         });
     </script>
 
