@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">
     <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
     <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" rel="stylesheet" type="text/css">
     
@@ -197,6 +198,27 @@
 	     text-align: center;
 	     color: #888;
       }
+      #error-message {
+         display: none;
+         text-align: center;
+         color: #f00;
+      }
+      input.error-text-box {
+         outline: none;
+         background: #faa;
+         border: 2px solid #d00;
+      }
+      #success {
+          display: none;
+          color: #2babe2;
+          text-align: center;
+      }
+      #server-noresponse {
+          display: none;
+          color: #2babe2;
+          text-align: center;
+      }
+
       .footer {
       	background: #000;
         color: #cccccc;
@@ -399,11 +421,14 @@
         <div class="span12 copy action form-bkgd">
           <div class="row-fluid">
             <form class="form-horizontal">
-              <div class="control-group offset2">
+              <p id="error-message">Please use a valid Email Address</p>
+              <p id="server-noresponse">Sorry but our server is not responding. Can you please try again later.<p>
+              <p id="success">We will be sending you more information about Vetro soon.</p>
+              <div class="control-group offset2" id="form-fields">
                 <label class="control-label" for "inputEmail">Your Email</label>
                 <div class="controls">
                   <input class= "span6" type="text" id="inputEmail" placeholder="john@email.com">
-                  <input class="btn btn-large btn-primary" type="submit" value="Send Me Information">
+                  <input id="submit_form" class="btn btn-large btn-primary" type="button" value="Send Me Information">
                 </div><!--controls-->
                 
               </div><!--control-group-->
@@ -425,7 +450,33 @@
     </div><!--row-fluid footer-->
     
     </div><!-- container -->
-    
+
+    <script>
+        $(function() {
+            var email = $('#inputEmail');
+            $('#submit_form').on('click', function() {
+                $.getJSON('http://demo.nbtsolutions.com/vetro/mail.php?callback=?',
+                    { email: email.val() },
+                    function(data) {
+                        if(data.result === 'success') {
+                            $('#server-noresponse').css({'display' : 'none'});
+                            $('#error-message').css({'display' : 'none'});
+                            $('#form-fields').css({'display' : 'none'});
+                            $('#success').css({'display' : 'block'});
+                        }
+                        else if(data.result === 'invalid email') {
+                            $('#server-noresponse').css({'display' : 'none'});
+                            $('#error-message').css({'display' : 'block'});
+                            email.addClass('error-text-box');
+                        }
+                        else {
+                            $('#server-noresponse').css({'display' : 'block'});
+                        }
+                });
+            });
+        });
+    </script>
+
     <!-- GOOGLE ANALYTICS -->
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
