@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">
     <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
     <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" rel="stylesheet" type="text/css">
     
@@ -198,7 +197,7 @@
 	     text-align: center;
 	     color: #888;
       }
-      #error-message {
+      .error-message {
          display: none;
          text-align: center;
          color: #f00;
@@ -420,17 +419,20 @@
 	  <!-- INPUT FORM -->
         <div class="span12 copy action form-bkgd">
           <div class="row-fluid">
+            <p id="error-message-email" class="error-message">Please use a valid email address</p>
+            <p id="error-message-name" class="error-message">Please enter a name</p>
+            <p id="error-message-email-name" class="error-message">Please enter your name and a valid email address</p>
+            <p id="server-noresponse" class="error-message">Sorry but our server is not responding. Can you please try again later.<p>
+            <p id="success" class="error-message">We will be sending you more information about Vetro soon.</p>
             <form class="form-horizontal">
-              <p id="error-message">Please use a valid Email Address</p>
-              <p id="server-noresponse">Sorry but our server is not responding. Can you please try again later.<p>
-              <p id="success">We will be sending you more information about Vetro soon.</p>
               <div class="control-group offset2" id="form-fields">
-                <label class="control-label" for "inputEmail">Your Email</label>
+                <label class="control-label" for "inputEmail">Email</label>
+                <label class="control-label" for "inputName">Name</label>
                 <div class="controls">
-                  <input class= "span6" type="text" id="inputEmail" placeholder="john@email.com">
+                  <input class= "span3" type="text" id="inputEmail" placeholder="john@email.com">
+                  <input class= "span3" type="text" id="inputName" placeholder="john">
                   <input id="submit_form" class="btn btn-large btn-primary" type="button" value="Send Me Information">
                 </div><!--controls-->
-                
               </div><!--control-group-->
             </form>
           </div><!--row-fluid-->
@@ -453,25 +455,48 @@
 
     <script>
         $(function() {
-            var email = $('#inputEmail');
+            var email = $('#inputEmail'),
+                name = $('#inputName');
            
             function submitForm() {
                 $.getJSON('http://demo.nbtsolutions.com/vetro/mail.php?callback=?',
-                    { email: email.val() },
+                    { 
+                        email: email.val(),
+                        name: name.val()
+                    },
                     function(data) {
-                        if(data.result === 'success') {
-                            $('#server-noresponse').css({'display' : 'none'});
-                            $('#error-message').css({'display' : 'none'});
+                        $('#server-noresponse').css({'display' : 'none'});
+                        $('#error-message-email').css({'display' : 'none'});
+                        $('#error-message-name').css({'display' : 'none'});
+                        $('#error-message-email-name').css({'display' : 'none'});
+                        $('#success').css({'display' : 'none'});
+                        // success
+                        if(data.result === '0') {
                             $('#form-fields').css({'display' : 'none'});
                             $('#success').css({'display' : 'block'});
                         }
-                        else if(data.result === 'invalid email') {
-                            $('#server-noresponse').css({'display' : 'none'});
-                            $('#error-message').css({'display' : 'block'});
+                        // name is empty
+                        else if(data.result === '1') {
+                            $('#error-message-name').css({'display' : 'block'});
+                            email.removeClass('error-text-box');
+                            name.addClass('error-text-box');
+                        }
+                        // invalid email address
+                        else if(data.result === '2') {
+                            $('#error-message-email').css({'display' : 'block'});
                             email.addClass('error-text-box');
+                            name.removeClass('error-text-box');
+                        }
+                        // empty name and invalid email address
+                        else if(data.result === '3') {
+                            $('#error-message-email-name').css({'display' : 'block'});
+                            email.addClass('error-text-box');
+                            name.addClass('error-text-box');
                         }
                         else {
                             $('#server-noresponse').css({'display' : 'block'});
+                            email.removeClass('error-text-box');
+                            name.removeClass('error-text-box');
                         }
                 });
             }
