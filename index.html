@@ -12,7 +12,265 @@
     <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
     <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="vetro.css">
+    <!--<link rel="stylesheet" type="text/css" href="vetro.css">-->
+    <style type="text/css">
+      /* Large Desktop */
+      @media (min-width: 980px) {
+        body {
+          padding-top: 60px;
+        }
+	      .linediv-l {
+	        border-right: 1px white solid;
+	      }  
+	      .linediv-r {
+	        border-left: 1px white solid;
+	      }
+      }
+
+      /* Landscape phones and down */
+      @media (max-width: 488px) {
+        .copy {
+          padding: 2.5% 10%;
+        }
+        .linediv-l {
+          border-top: 1px white solid;
+        }
+        /*FORM*/
+        .control-group {
+		  
+	  }
+      } 
+
+      /* Main body and headings */      
+      body {
+        font-family: 'Open Sans', Helvetica,Arial,san-serif;		
+      }
+      .container {
+	      width: 100%;
+      }
+
+      h1 {
+        font-size: 60px;
+        color: #2babe2;
+      }
+      
+      h2 {
+        font-size: 32px;
+        color: #2babe2;
+        text-align: center;
+      }
+      
+      .heading, subheading {
+        font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+	    text-align: center;
+      }
+      .img-polaroid {
+	      border: #fff;
+	      box-shadow: none;
+      }
+      p.lead {
+        padding-top: 1.5%;
+	    text-align: center;
+	    font-size: 24px;
+	    line-height: 30px;
+	    color: #666;
+      }
+      p.quotetext {
+        font-style: italic;
+        font-size: 24px;
+        text-align: left;
+        line-height: 48px;
+        line-height: 1.5em;
+        padding: 20px;
+        /*color: #2babe2;*/
+        color: #888;
+        margin-top: 80px;
+      }
+      p {
+        font-size: 18px;
+	    line-height: 24px;
+	    color: #333;
+      }	
+  
+      /* Video pitch and action */
+      .pitch {
+	      padding: 2.5% 0%;
+      }
+      .section2 {
+	      background: #efefef;
+      }
+      .order {
+	        border: 1px solid blue;
+      }
+      .actions {
+        background-color: #343434;
+        padding: 3% 0%;
+      }
+      .borderbox {
+        margin-top: 40px;
+        -webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+        border-radius: 5px;
+      }
+
+      .video, .thermometer, .order, .social, .statistics {
+        text-align: center;
+      }
+      .statistics h3, .statistics p {
+        color: white;
+      }
+
+      #pitch-list {
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      #pitch-list li {
+        padding: 10px;
+        line-height: 25px;
+        color: #333;
+      }
+
+      .details {
+        margin-top: 40px;
+      }
+      
+      #details-list li {
+        padding: 10px;
+        line-height: 25px;
+        color: #333;
+      }
+
+      #about {
+        padding: 15px 0px;
+      }
+
+      /*FAQ*/
+      .accordian-heading {
+	      font-size: 1.2em;
+	      margin-bottom: 10px;
+      }
+      .collapse {
+	      font-size: 1.2em;  
+      }
+      .accordian-inner {
+	      padding-bottom: 5px;
+      }
+	  
+	  /*FORM*/
+	  .form-bkgd {
+		 background: #000;
+		 margin: 0 !important;
+	  }
+	  
+	  .form-horizontal  {
+		  padding: 0;
+		  margin: 0;
+		  text-align: left;
+	  }
+	  
+	  .control-group {
+		  padding: 0;
+		  margin: 0 auto;
+		  width: 85%;
+	  }
+	  
+	  .control-group > .controls {
+		  padding: 0;
+		  margin: 0;
+	  }
+	  
+	  .name-textbox,
+	  .email-textbox {
+		  width: 35%;
+		  padding: 0;
+		  margin: 0;
+		  display: inline-block;
+	  }
+	  
+	  .name-textbox > .control-label,
+	  .email-textbox > .control-label {
+		  color: #fff;
+		  text-align: left;
+		  width: 20%;
+		  display: inline-block;
+	  }
+	  
+	  .name-textbox > .span3,
+	  .email-textbox > .span3 {
+		  text-align: left;
+		  width: 70%;
+	  }
+	  
+      /* Marketing and Copy Footer */
+     .modules-text > p {
+	      text-align: center;
+	      font-weight: bold;
+	      font-size: 1.5em;
+	      color: #2babe2;
+      }
+      .modules-text > ol > li {
+	      font-size: 1.2em;
+      }
+      .copy {
+        padding-top: 2.5%;
+        padding-bottom: 2.5%;
+        text-align: justify;
+      }
+      .copy-right {
+	   	padding: 30px;
+      }
+      .asset {
+        padding: 2.5% 0%;
+      }
+      .contact {
+	      background: #000;
+	      padding-bottom: 20px;
+      }
+      .contact > .span12 > p {
+	     text-align: center;
+	     color: #888;
+      }
+      .error-message {
+         display: none;
+         text-align: center;
+         color: #f00;
+      }
+      input.error-text-box {
+         outline: none;
+         background: #faa;
+         border: 2px solid #d00;
+      }
+      #success {
+          display: none;
+          color: #2babe2;
+          text-align: center;
+      }
+      #server-noresponse {
+          display: none;
+          color: #2babe2;
+          text-align: center;
+      }
+
+      .footer {
+      	background: #000;
+        color: #cccccc;
+        text-align: center;
+      }
+      .footer p {
+        font-size: 11px;
+        color: #ccccff;
+      }
+      .footer a {
+        color: #ffffff;
+      }
+
+      div.addthis_toolbox {
+        width: 188px;
+        margin: 0 auto;
+      }
+
+    </style>
     
         <!-- Google Analytics -->
     <script>
