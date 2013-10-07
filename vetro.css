@@ -1,4 +1,4 @@
-  /* Large Desktop */
+      /* Large Desktop */
       @media (min-width: 980px) {
         body {
           padding-top: 60px;
@@ -93,7 +93,7 @@
       .borderbox {
         margin-top: 40px;
         -webkit-border-radius: 5px;
-		-moz-border-radius: 5px;
+		    -moz-border-radius: 5px;
         border-radius: 5px;
       }
 
@@ -108,6 +108,7 @@
         font-size: 18px;
         font-weight: bold;
       }
+
 
       #pitch-list li {
         padding: 10px;
@@ -253,3 +254,4 @@
         width: 188px;
         margin: 0 auto;
       }
+
