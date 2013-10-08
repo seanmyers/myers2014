@@ -19,11 +19,7 @@
         .linediv-l {
           border-top: 1px white solid;
         }
-        /*FORM*/
-        .control-group {
-		  
-	  }
-      } 
+	    }
 
       /* Main body and headings */      
       body {
@@ -126,8 +122,8 @@
         color: #333;
       }
 
-      #about {
-        padding: 15px 0px;
+      .anchorspace {
+        padding: 40px 0px;
       }
 
       /*FAQ*/
