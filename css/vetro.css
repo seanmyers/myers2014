@@ -42,8 +42,9 @@
       
       .heading, subheading {
         font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
-	    text-align: center;
+	      text-align: center;
       }
+
       .img-polaroid {
 	      border: #fff;
 	      box-shadow: none;
@@ -76,9 +77,15 @@
       .pitch {
 	      padding: 2.5% 0%;
       }
+      
       .section2 {
 	      background: #efefef;
       }
+
+      #features {
+        padding: 0px 0px 50px 0px;
+      }
+
       .order {
 	        border: 1px solid blue;
       }
