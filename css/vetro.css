@@ -67,10 +67,11 @@
         color: #888;
         margin-top: 80px;
       }
+      
       p {
         font-size: 18px;
-	    line-height: 24px;
-	    color: #333;
+	      line-height: 24px;
+	      color: #333;
       }	
   
       /* Video pitch and action */
@@ -133,17 +134,49 @@
         padding: 40px 0px;
       }
 
-      /*FAQ*/
-      .accordian-heading {
-	      font-size: 1.2em;
-	      margin-bottom: 10px;
-      }
-      .collapse {
-	      font-size: 1.2em;  
-      }
-      .accordian-inner {
-	      padding-bottom: 5px;
-      }
+    /* Feature Boxes */
+
+    .feature-image {
+      text-align: left;
+    }
+
+    .feature-title {
+      font-family: Ubuntu,sans-serif;
+      color: #2288b4; 
+      text-align: left;
+      font-size: 1.75em;
+      margin-top: 20px;
+    }
+
+    .feature-content {
+      margin-top: 10px; 
+      font-size: 1.5em;
+    }
+
+    .feature-button {
+      text-align: left;
+      font-size: 1.5em;
+    }
+
+    .feature-button > a:link, a:visited, a:hover {
+      color: #acacac;
+      text-decoration: none;
+    }
+
+    
+    /*FAQ*/
+    .accordian-heading {
+	    font-size: 1.2em;
+	    margin-bottom: 10px;
+    }
+
+    .collapse {
+	    font-size: 1.2em;  
+    }
+
+    .accordian-inner {
+	    padding-bottom: 5px;
+    }
 	  
 	  /*FORM*/
 	  .form-bkgd {
