@@ -36,6 +36,15 @@
       
       h2 {
         font-size: 32px;
+        font-family: Ubuntu, sans-serif;
+        color: #2babe2;
+        text-align: center;
+      }
+      
+      #about {
+        font-size: 32px;
+        margin-top: 50px;
+        font-family: Ubuntu, sans-serif;
         color: #2babe2;
         text-align: center;
       }
@@ -83,8 +92,12 @@
 	      background: #efefef;
       }
 
+      #aboutvetro {
+        margin-top: 10px;
+      }
+
       #features {
-        padding: 0px 0px 50px 0px;
+        padding: 40px 0px 50px 0px;
       }
 
       .order {
@@ -130,12 +143,12 @@
         color: #333;
       }
 
-      .anchorspace {
-        padding: 40px 0px;
-      }
-
     /* Feature Boxes */
 
+    #features {
+      margin-top: 120px;
+    }
+    
     .feature-image {
       text-align: left;
     }
@@ -146,6 +159,7 @@
       text-align: left;
       font-size: 1.75em;
       margin-top: 20px;
+      line-height: 30px;
     }
 
     .feature-content {
@@ -158,8 +172,10 @@
       font-size: 1.5em;
     }
 
-    .feature-button > a:link, a:visited, a:hover {
-      color: #acacac;
+    .feature-button a:link,
+    .feature-button a:visited,
+    .feature-button a:hover {
+      color: #939393;
       text-decoration: none;
     }
 
