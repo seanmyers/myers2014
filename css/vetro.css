@@ -107,6 +107,7 @@
         background-color: #343434;
         padding: 3% 0%;
       }
+
       .borderbox {
         margin-top: 40px;
         -webkit-border-radius: 5px;
@@ -151,6 +152,8 @@
     
     .feature-image {
       text-align: left;
+      height: 200px;
+      width: 250px;
     }
 
     .feature-title {
