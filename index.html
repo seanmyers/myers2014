@@ -85,7 +85,7 @@
         </div>
 
         <div class="row-fluid" id="features">                             
-          <div class="span3 offset2 feature-box">
+          <div class="span3 offset1 feature-box">
             <div class="feature-image">
               <img src="/images/demandthumbnail.png">
             </div>
@@ -99,7 +99,7 @@
             </div>
           </div> <!-- Feature Box -->
 
-          <div class="span3 feature-box"">
+          <div class="span3 offset1 feature-box"">
             <div class="feature-image">
               <img src="/images/planningthumbnail.png">
             </div>
@@ -112,7 +112,7 @@
             </div>
           </div> <!-- Feature Box -->
 
-          <div class="span3 feature-box"">
+          <div class="span3 offset1 feature-box"">
             <div class="feature-image">
               <img src="/images/assets.png">
             </div>
@@ -133,7 +133,7 @@
         <div class="span5 offset1" id="quote">
           <p class="quotetext">"As a small service provider we are looking forward
               to using Vetro to help expand the demand for our services and plan
-              new projects that maximize our investment" - Fiber Network Engineer</p>
+              new projects that maximize the revenues on our investment" - Fiber Network Engineer</p>
         </div>
           
         <!-- For this FAQ, we introduce JS using the accordian -->
@@ -196,47 +196,53 @@
       </div><!--row-fluid-->
   
 	  <!-- INPUT FORM -->
-      <div class="row-fluid form-bkgrd">
-        <div class="span10 offset2 copy action">
+      <div class="form-bkgrd">
           <p id="error-message-email" class="error-message">Please use a valid email address</p>
           <p id="error-message-name" class="error-message">Please enter a name</p>
           <p id="error-message-email-name" class="error-message">Please enter your name and a valid email address</p>
           <p id="server-noresponse" class="error-message">Sorry but our server is not responding. Can you please try again later.<p>
           <p id="success" class="error-message">We will be sending you more information about Vetro soon.</p>
             
-          <form class="form-horizontal">
+          <form class="form-horizontal" id="input-form">
             <div class="control-group" id="form-fields">
-            <div class="controls">
-            <div class="name-textbox">
-              <label class="control-label" for "inputName">Name</label>
-              <input class= "span3" type="text" id="inputName" placeholder="john">
-            </div><!--name-textbox-->
+            
+              <div class="row-fluid controls">
+                <div class="name-textbox span3 offset3">
+                  <label class="control-label" for "inputName">Name</label>
+                  <input type="text" id="inputName" placeholder="john">
+                </div><!--name-textbox-->
               
-              <div class="email-textbox">
-                <label class="control-label" for "inputEmail">Email</label>
-                <input class= "span3" type="text" id="inputEmail" placeholder="john@email.com">
-              </div><!--email-textbox-->
-                
-              <input id="submit_form" class="btn btn-large btn-primary" type="button" value="Send Me Information">
-              </div><!--controls-->
+                <div class="email-textbox span3">
+                  <label class="control-label" for "inputEmail">Email</label>
+                  <input type="text" id="inputEmail" placeholder="john@email.com">
+                </div><!--email-textbox-->
+              </div> <!-- controls -->
+          
+              <div class="row-fluid send-button">
+                <div class="span3 offset5">
+                  <input id="submit_form" class="btn btn-large btn-primary"
+                    type="button" value="Send Me Information">
+                </div>
+              </div><!--send-button -->
+            
             </div><!--control-group-->
           </form>
-        </div><!--copy action-->
-      </div><!--row-fluid -->
           
-      <div class="row-fluid contact">
-        <div class="span12">
-          <p id="contactme"><a href="mailto:info@nbtsolutions.com">info@nbtsolutions.com</a> | +1 716 359-3586</p>
-        </div><!--span12-->
-      </div><!--row-fluid footer-->
+        <div class="row-fluid contact">
+          <div class="span12">
+            <p id="contactme"><a href="mailto:info@nbtsolutions.com">info@nbtsolutions.com</a> | +1 716 359-3586</p>
+          </div><!--span12-->
+        </div><!--row-fluid footer-->
       
-      <div class="row-fluid footer">
-        <div class="span12">
-          <p>Vetro is Owned by <a href="http://www.nbtsolutions.com">
-              NBT Solutions LLC</a></br>© Copyright Vetro 2013</p>
-        </div><!--span12-->
-      </div><!--row-fluid footer-->
-    
+        <div class="row-fluid footer">
+          <div class="span12">
+            <p>Vetro is Owned by <a href="http://www.nbtsolutions.com">
+                NBT Solutions LLC</a></br>© Copyright Vetro 2013</p>
+          </div><!--span12-->
+        </div><!--row-fluid footer-->
+      
+      </div> <!-- form-bkgrd -->
+
     </div><!-- container -->
 
     <script>
