@@ -25,6 +25,7 @@
       body {
         font-family: 'Open Sans', Helvetica,Arial,san-serif;		
       }
+
       .container {
 	      width: 100%;
       }
@@ -86,7 +87,7 @@
       .pitch {
 	      padding: 2.5% 0%;
       }
-      
+
       .section2 {
 	      background: #efefef;
       }
@@ -99,9 +100,24 @@
       .order {
 	        border: 1px solid blue;
       }
-      .actions {
-        background-color: #343434;
-        padding: 3% 0%;
+
+      .survey {
+        background-color: #81cdee;
+        margin-right: 10px;
+        border-radius: 15px;
+      }
+
+      #survey-intro {
+        font-family: Ubuntu, sans-serif;
+        font-size: 18px;
+        line-height: 24px;
+        text-align: center;
+        padding: 15px 15px 15px 15px;
+      }
+
+      #go-survey {
+        text-align: center;
+        padding: 25px 0px 25px 0px;
       }
 
       .borderbox {
@@ -235,6 +251,7 @@
 
     .send-button {
       margin: 2% 0 1%;
+      text-align: center;
     }
 	  
     /* Marketing and Copy Footer */
