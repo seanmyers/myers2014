@@ -1,24 +1,52 @@
       /* Large Desktop */
       @media (min-width: 980px) {
-        body {
-          padding-top: 60px;
-        }
-	      .linediv-l {
-	        border-right: 1px white solid;
-	      }  
-	      .linediv-r {
-	        border-left: 1px white solid;
-	      }
-      }
+		  body {
+			  padding-top: 60px;
+	       }
+		   .linediv-l {
+			   border-right: 1px white solid;
+			}  
+			.linediv-r {
+	        	border-left: 1px white solid;
+			}
+		}
 
       /* Landscape phones and down */
       @media (max-width: 488px) {
-        .copy {
-          padding: 2.5% 10%;
-        }
-        .linediv-l {
-          border-top: 1px white solid;
-        }
+        	.copy {
+				padding: 2.5% 10%;
+			}
+			.linediv-l {
+				border-top: 1px white solid;
+			}
+
+			.image {
+				float: none !important;
+				margin: 0 !important;
+			}
+			
+			img {
+				margin: 0px auto;
+				display: block;
+			}
+			
+			.text-container > .feature-title {
+				text-align: center;
+			}
+			
+			/* Form */
+			#input-form {
+				padding: 20px
+			}
+			
+			label {
+				margin-right: 10px;
+			}
+			
+			.name-textbox,
+			.email-textbox {
+				margin-bottom: 10px;
+			}
 	    }
 
       /* Main body and headings */      
@@ -327,4 +355,24 @@
         width: 188px;
         margin: 0 auto;
       }
+
+/***** INNER PAGE *****/
+#more-info {
+	background: #fff;
+}/*more-info*/
+
+.info-box {
+	margin-bottom: 30px;
+}/*info-1*/
+
+.image {
+	float: left;
+	margin: 20px;
+}
+
+img {
+	-webkit-box-shadow: 0 8px 6px -6px black;
+	-moz-box-shadow: 0 8px 6px -6px black;
+	box-shadow: 0 8px 6px -6px black;
+}
 

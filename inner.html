@@ -12,7 +12,7 @@
     <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
     <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="/css/vetro.css">
+    <link rel="stylesheet" type="text/css" href="css/vetro.css">
 
     <!-- Google Analytics -->
     <script>
@@ -73,145 +73,57 @@
         </div><!--span12-->
       </div><!--row-fluid subheading-->
 
-      <!--large image --> 
-      <div class="row-fluid pitch">
-        <div class="span5 offset1 video"><img class="img-polaroid"
-              src="images/mac.png">
-        </div>
-        <div class="span4 offset1 survey">
-          <div class="span12">
-            <p id="survey-intro">Through the generosity of state economic development
-                grant programs we are in the beginning stages of developing Vetro.
-                To make Vetro a success we would like to get some upfront input from small and mid-sized
-                service providers. Could you please take 20 minutes to fill out this survey and give
-                us your opinions? All the information collected is confidential and will be 
-                used solely to help shape the requirements and features of Vetro. We appreciate
-                your help!</p>
-          </div>
-          <!-- GO TO SURVEY BUTTON -->    
-          <div class="span12" id="go-survey">
-            <input class="btn btn-large btn-primary"
-                    type="button" value="Go To Our Survey!">
-          </div> <!-- button --> 
-        </div>
-      </div> <!-- row-fluid pitch -->
-     
-      <div class="row-fluid section2" id="aboutvetro">
-        <div class="span10 offset1">
-          <h2 id="about">How will Vetro help me expand my fiber networks?</h2>
-        </div>
 
-        <div class="row-fluid" id="features">                             
-          <div class="span3 offset1 feature-box">
-            <div class="feature-image">
+     <!-- MORE INFO -->
+      <div class="row-fluid section2" id="more-info">
+
+		<!-- INFO 1 -->
+        <div class="row-fluid">                             
+          <div class="span10 offset1 info-box">
+            <div class="image">
               <img src="images/demand.png">
             </div>
-            <div class="feature-title">Demand Tracking</div>
-            <div class="feature-content">
-              <p>Increase your take rates by mapping and tracking FTTx demand
-                  potential.</p>
-            </div>
-            <div class="feature-button">
-              <a href="/demand">Read More <i class="icon-circle-arrow-right"></i></a>
-            </div>
-          </div> <!-- Feature Box -->
-
-          <div class="span3 offset1 feature-box"">
-            <div class="feature-image">
-              <img src="/images/planningthumbnail.png">
-            </div>
-            <div class="feature-title">Planning</div>
-            <div class="feature-content">
-              <p>Quickly estimate the costs and revenues associated with proposed projects.</p>
-            </div>
-            <div class="feature-button">
-              <a href="/planning">Read More <i class="icon-circle-arrow-right"></i></a>
-            </div>
-          </div> <!-- Feature Box -->
-
-          <div class="span3 offset1 feature-box"">
-            <div class="feature-image">
-              <img src="images/assets.png">
-            </div>
-            <div class="feature-title">Asset Inventory and Mapping</div>
-            <div class="feature-content">
-              <p>Get a high-level view of your projects by seeing the locations
-                  and attributes of fiber network assets owned by your company and your partners.</p>
-            </div>
-            <div class="feature-button">
-              <a href="/assetinventory">Read More <i class="icon-circle-arrow-right"></i></a>
-            </div>
-          </div>
-        </div><!-- Features -->      
-      </div><!--row-fluid section2-->
-      
-      <!-- CUSTOMER QUOTE and FAQS -->
-      <div class="row-fluid">
-        <div class="span5 offset1" id="quote">
-          <p class="quotetext">"As a small service provider we are looking forward
-              to using Vetro to help expand the demand for our services and plan
-              new projects that maximize the returns on our investment" - Fiber Network Engineer</p>
-        </div>
-          
-        <!-- For this FAQ, we introduce JS using the accordian -->
-		    <!-- This brings in jquery.js and boostrap.js as dependencies -->
-		    <!-- http://twitter.github.io/bootstrap/javascript.html#collapse -->
-			  <div class="span5 offset1" id="faq">
-				  <h3 id="faq">FAQ</h3>
-				  <div class="accordian" id="accordian2">
-					  <div class="accordian-group">
-						  <div class="accordian-heading">
-							  <a class="accordian-toggle" data-toggle="collapse" data-parent="#accordian2"
-                    href="#collapseTwo">Do I need to license any additional
-                    software like ArcGIS to run Vetro?</a>
-						  </div>
-						  <div id="collapseTwo" class="accordian-body collapse">
-							  <div class="accordian-inner">No, Vetro is an entirely secure,
-                      cloud-based application that is built using open source tools
-                      and does not require any 3rd party licensing.
-                </div>
-						  </div>
-					  <div class="accordian-group">
-						  <div class="accordian-heading">
-							  <a class="accordian-toggle" data-toggle="collapse"data-parent="#accordian2" href="#collapseOne">
-                    Where is my data being stored?</a>
-						  </div>
-						  <div id="collapseOne" class="accordian-body collapse">
-							  <div class="accordian-inner">
-                  All data is stored securely on an Amazon Elastic Computing (EC2)
-                  instance.
-                </div>
-						  </div>
-						 </div>
-					  <div class="accordian-group">
-						  <div class="accordian-heading">
-							  <a class="accordian-toggle" data-toggle="collapse"data-parent="#accordian2" 
-                    href="#collapseThree">
-                    How will I be charged for using Vetro?</a>
-						  </div>
-						  <div id="collapseThree" class="accordian-body collapse">
-							  <div class="accordian-inner">
-                  You will pay for Vetro through a monthly subscription. The price
-                  depends on the size of your network - not the number of users.
-                </div>
-						  </div>
-						 </div>
-            <div class="accordian-group">
-						  <div class="accordian-heading">
-							  <a class="accordian-toggle" data-toggle="collapse"data-parent="#accordian2"
-                href="#collapseFour">What does Vetro mean?</a>
-						  </div>
-						  <div id="collapseFour" class="accordian-body collapse">
-							  <div class="accordian-inner">Vetro is the Italian word for glass, the material that makes up a fiber strand.</div>
-						  </div>
-						 </div>
-						 </div>
-						</div>
-					</div>
+            <div class="text-container">
+            	<div class="feature-title">Title 1 Goes Here</div>
+				<div class="feature-content">
+					<p>Description goes here. Description goes here. Description goes here. Description goes here. Description goes here. Description goes here. Description goes here. Description goes here. Description goes here. Description goes here. Description goes here. Description goes here. Description goes here. Description goes here. Description goes here. Description goes here. Description goes here. Description goes here. Description goes here. Description goes here. Description goes here. Description goes here. Description goes here. Description goes here. </p>
 				</div>
-        </div><!--span5 offset1 borderbox --> 
-      </div><!--row-fluid-->
-  
+            </div><!-- text-container -->
+          </div> <!-- info box -->
+        </div><!-- row-fluid-->
+        
+        <!-- INFO 2 -->
+        <div class="row-fluid">                             
+          <div class="span10 offset1 info-box">
+            <div class="image">
+              <img src="images/demand.png">
+            </div>
+            <div class="text-container">
+            	<div class="feature-title">Title 2 Goes Here</div>
+				<div class="feature-content">
+					<p>Description goes here. Description goes here. Description goes here. Description goes here. Description goes here. Description goes here. Description goes here. Description goes here. Description goes here. Description goes here. Description goes here. Description goes here. Description goes here. Description goes here. Description goes here. Description goes here. Description goes here. Description goes here. Description goes here. Description goes here. Description goes here. Description goes here. Description goes here. Description goes here. </p>
+				</div>
+            </div><!-- text-container -->
+          </div> <!-- info box -->
+        </div><!-- row-fluid-->
+        
+        <!-- INFO 3 -->
+        <div class="row-fluid">                             
+          <div class="span10 offset1 info-box">
+            <div class="image">
+              <img src="images/demand.png">
+            </div>
+            <div class="text-container">
+            	<div class="feature-title">Title 3 Goes Here</div>
+				<div class="feature-content">
+					<p>Description goes here. Description goes here. Description goes here. Description goes here. Description goes here. Description goes here. Description goes here. Description goes here. Description goes here. Description goes here. Description goes here. Description goes here. Description goes here. Description goes here. Description goes here. Description goes here. Description goes here. Description goes here. Description goes here. Description goes here. Description goes here. Description goes here. Description goes here. Description goes here. </p>
+				</div>
+            </div><!-- text-container -->
+          </div> <!-- info box -->
+        </div><!-- row-fluid-->
+
+      
+        
 	  <!-- INPUT FORM -->
       <div class="form-bkgrd">
           <p id="error-message-email" class="error-message">Please use a valid email address</p>
