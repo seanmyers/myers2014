@@ -70,6 +70,13 @@
         text-align: center;
       }
       
+      .heading {
+	      background: #ccc;
+	      margin-top: -1.4em;
+	      padding-top: 2em;
+	 
+      }
+      
       #about {
         font-size: 32px;
         margin-top: 50px;
@@ -83,16 +90,21 @@
 	      text-align: center;
       }
 
-      .img-polaroid {
-	      border: #fff;
-	      box-shadow: none;
+      ul {
+	      list-style: none;
       }
+      
+      li {
+	      text-align: left;
+      }
+      
       p.lead {
         padding-top: 1.5%;
 	    text-align: center;
 	    font-size: 24px;
 	    line-height: 30px;
 	    color: #666;
+	    
       }
       p.quotetext {
         font-style: italic;
@@ -107,8 +119,9 @@
       
       p {
         font-size: 18px;
-	      line-height: 24px;
-	      color: #333;
+	    line-height: 24px;
+	    color: #333;
+	    text-align: left;
       }	
   
       /* Video pitch and action */
@@ -139,7 +152,7 @@
         font-family: Ubuntu, sans-serif;
         font-size: 18px;
         line-height: 24px;
-        text-align: center;
+        text-align: left;
         padding: 15px 15px 15px 15px;
       }
 
