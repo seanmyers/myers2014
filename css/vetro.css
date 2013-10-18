@@ -323,7 +323,7 @@
 
       .contact {
 	      background: #000;
-	      padding-bottom: 2%;
+	      padding-bottom: 1%;
       }
 
       .contact > .span12 > p {
@@ -354,11 +354,12 @@
       .footer {
       	background: #000;
         color: #cccccc;
-        text-align: center;
       }
+
       .footer p {
         font-size: 11px;
         color: #ccccff;
+        text-align: center;
       }
       .footer a {
         color: #ffffff;
