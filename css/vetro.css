@@ -53,6 +53,22 @@
       body {
         font-family: 'Open Sans', Helvetica,Arial,san-serif;		
       }
+      
+      img#big-bkgd {
+		  /* Set rules to fill background */
+		  min-height: 100%;
+		  min-width: 1024px;
+	
+		  /* Set up proportionate scaling */
+		  width: 100%;
+		  height: auto;
+	
+		  /* Set up positioning */
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+	  }
+
 
       .container {
 	      width: 100%;
@@ -61,6 +77,8 @@
       h1 {
         font-size: 60px;
         color: #2babe2;
+        z-index: 20;
+        position: relative;
       }
       
       h2 {
@@ -68,12 +86,16 @@
         font-family: Ubuntu, sans-serif;
         color: #2babe2;
         text-align: center;
+        z-index: 20;
+        position: relative;
       }
       
       .heading {
-	      background: #ccc;
-	      margin-top: -1.4em;
-	      padding-top: 2em;
+	     background: #ccc;
+	     margin-top: -1.4em;
+	     padding-top: 2em;
+	     z-index: 20;
+		 position: relative;
 	 
       }
       
@@ -83,19 +105,53 @@
         font-family: Ubuntu, sans-serif;
         color: #2babe2;
         text-align: center;
+        z-index: 20;
+        position: relative;
       }
       
       .heading, subheading {
         font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
-	      text-align: center;
+	    text-align: center;
+	    z-index: 20;
+        position: relative;
       }
 
       ul {
 	      list-style: none;
+	      z-index: 20;
+		  position: relative;
       }
       
-      li {
+      li.feature {
 	      text-align: left;
+	      margin: 0 0 10px 0;
+	      display: inline-block;
+	      width: 100%;
+      }
+      
+      .text-container {
+	      display: inline-block;
+	      width: 70%
+      }
+      
+      .text-container > h3 {
+	      line-height: 0;
+	      margin-bottom: 20px;
+	      font-size: 1.6em;
+	      color:	#2babe2;
+      }
+      
+       .text-container > p {
+	      color:	#ccc;
+      }
+      
+      .icon {
+	      display: block;
+	      width: 100px;
+	      height: 100px;
+	      border: 1px solid blue;
+	      float: left;
+	      margin-right: 20px;
       }
       
       p.lead {
@@ -103,7 +159,9 @@
 	    text-align: center;
 	    font-size: 24px;
 	    line-height: 30px;
-	    color: #666;
+	    color: #ccc;
+	    z-index: 20;
+        position: relative;
 	    
       }
       p.quotetext {
@@ -113,8 +171,9 @@
         text-align: left;
         line-height: 48px;
         line-height: 1.5em;
-        /*color: #2babe2;*/
         color: #888;
+        z-index: 20;
+        position: relative;
       }
       
       p {
@@ -146,6 +205,9 @@
         background-color: #81cdee;
         margin-right: 10px;
         border-radius: 15px;
+        z-index: 20;
+        position: relative;
+        padding: 20px;
       }
 
       #survey-intro {
@@ -153,12 +215,11 @@
         font-size: 18px;
         line-height: 24px;
         text-align: left;
-        padding: 15px 15px 15px 15px;
       }
 
       #go-survey {
         text-align: center;
-        padding: 25px 0px 25px 0px;
+        margin-top: 20px;
       }
 
       .borderbox {
@@ -167,7 +228,7 @@
 		    -moz-border-radius: 5px;
         border-radius: 5px;
       }
-
+	  
       .video, .thermometer, .order, .social, .statistics {
         text-align: center;
       }
@@ -241,12 +302,16 @@
       text-decoration: none;
     }
 
+	.faq-quote-container {
+		background: #fff;
+		z-index: 20;
+		position: relative;
+	}
     /* QUOTE */ 
     #quote {
       margin-top: 70px;
       margin-bottom: 40px;
     }
-
 
     /*FAQ*/
     #faq {
@@ -270,7 +335,7 @@
 	  .form-bkgrd {
 		 background: #000;
 		 margin: 0;
-     padding-top: 3%;
+		 padding-top: 3%;
 	  }
 	  
     .form-horizontal .controls {
@@ -330,7 +395,8 @@
 	     text-align: center;
 	     color: #888;
       }
-      .error-message {
+      
+       .error-message {
          display: none;
          text-align: center;
          color: #f00;
@@ -354,6 +420,9 @@
       .footer {
       	background: #000;
         color: #cccccc;
+        text-align: center;
+        z-index: 20;
+		    position: relative;
       }
 
       .footer p {
@@ -369,6 +438,12 @@
         width: 188px;
         margin: 0 auto;
       }
+      
+      .copyright > p > span {
+	      color: #666;
+	      margin: 0 10px;
+      }
+      
 
 /***** INNER PAGE *****/
 #more-info {
@@ -384,9 +459,9 @@
 	margin: 20px;
 }
 
-img {
+/*img {
 	-webkit-box-shadow: 0 8px 6px -6px black;
 	-moz-box-shadow: 0 8px 6px -6px black;
 	box-shadow: 0 8px 6px -6px black;
-}
+}*/
 
