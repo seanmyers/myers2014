@@ -60,35 +60,38 @@
     
       <!-- SURVEY FORM  -->
       <h2 id="survey-intro">
-          Please help us understand what small and medium sized service
+          Thank you for helping us with this survey! Our goal is to understand what small and medium sized service
               providers would included in a geospatial mapping, planning, and
-              maintenance tool such as Vetro.</h2>
+              maintenance tool such as Vetro.<hr></h2>
       
+      <!-- BEGINNING OF THE SURVEY FORM -->      
       <form>
         <div class="form-group">
-          <legend class="legend-text">Please tell us how you would rank the
+          <legend class="legend-text">1. Please tell us how you would rank the
                   importance of the following issues when planning a fiber expansion project
                   (one indicates a low priority and three indicates a high priority).
                   </legend>
         
           <div class="controls">
-              <label>Being able to predict the estimated take rate of the project
-                      is important.</label>
+              <label>Using estimates of housing density and household demographics
+              to predict the estimated take rate of a proposed project.</label>
               <label class="radio inline"><input type="radio">1</label>
               <label class="radio inline"><input type="radio">2</label>
               <label class="radio inline"><input type="radio">3</label>
           </div>
 
           <div class="controls">
-            <label>Being able to estimate the costs of design and construction
-                    is important</label>
+            <label>Using map-based data to determine the number of poles, cable
+                    length, location of COs, etc. and use this data to quickly estimate costs of
+                    design and construction.</label>
             <label class="radio inline"><input type="radio">1</label>
             <label class="radio inline"><input type="radio">2</label>
             <label class="radio inline"><input type="radio">3</label>
           </div>
           
           <div class="controls">
-            <label>Knowing the availability of conduits and/or poles is important.</label>
+            <label>Determing the best path from a potential customers location to
+                  the nearest POP (my POP or a partner's POP).</label>
             <label class="radio inline"><input type="radio">1</label>
             <label class="radio inline"><input type="radio">2</label>
             <label class="radio inline"><input type="radio">3</label>
@@ -103,8 +106,94 @@
             <label class="radio inline"><input type="radio">2</label>
             <label class="radio inline"><input type="radio">3</label>
           </div>
+          
+          <div class="controls">
+            <div>
+              <label>Are there any other issues you think are important to consider?</label>
+              <textarea rows="4" placeholder="Please use this space to add any addtional thoughts."></textarea>
+            </div>
+          </div>
 
         </div> <!-- FORM GROUP -->
+
+        <div class="form-group">
+          <div class="controls">
+            <legend class="legend-text">2. Do you partner with one or more providers
+                  for your projects?</legend>
+              <label class="radio inline">YES<input type="radio"></label>
+              <label class="radio inline">NO<input type="radio"></label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="controls">
+            <legend class="legend-text">3. Do you currently use Geographic Information
+                Systems (GIS) to help with any of the stages of a fiber expansion
+                project (e.g. design, costing, construction, and mainetnance)?</legend>
+              <label class="radio inline">YES<input type="radio"></label>
+              <label class="radio inline">NO<input type="radio"></label>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <div class="controls">
+            <legend class="legend-text">4. If Yes, at what stage is the GIS
+                used the most?</legend>
+              <label class="checkbox">Design<input type="checkbox"></label>
+              <label class="checkbox">Costing<input type="checkbox"></label>
+              <label class="checkbox">Construction<input type="checkbox"></label>
+              <label class="checkbox">Maintenance<input type="checkbox"></label>
+              <label class="checkbox">Other<input type="checkbox"></label>
+              <textarea rows="4" placeholder="Other uses of GIS"></textarea>
+
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <div class="controls">
+            <legend class="legend-text">5. What GIS software do you use?</legend>
+              <label class="checkbox">Google Earth/Maps<input type="checkbox"></label>
+              <label class="checkbox">ESRI<input type="checkbox"></label>
+              <label class="checkbox">MapInfo<input type="checkbox"></label>
+              <label class="checkbox">N/A<input type="checkbox"></label>
+              <label class="checkbox">Other<input type="checkbox"></label>
+                <textarea rows="3" placeholder="Other uses of GIS"></textarea>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <div class="controls">
+            <legend class="legend-text">6. Would you consider using subscription-based
+                GIS where you would pay a monthly fee for use of the system?</legend>
+              <label class="radio inline">YES<input type="radio"></label>
+              <label class="radio inline">NO<input type="radio"></label>
+          </div>
+        </div>
+      
+        <div class="form-group">
+          <div class="controls">
+            <legend class="legend-text">7. How many miles of fiber do you currently maintain?</legend>
+              <label class="radio">< 250 miles<input type="radio"></label>
+              <label class="radio">250 miles to 1,000 miles<input type="radio"></label>
+              <label class="radio">1,000 miles to 5,000 miles<input type="radio"></label>
+              <label class="radio">> 5,000 miles<input type="radio"></label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="controls">
+            <legend class="legend-text">8. What category best describes your organization?</legend>
+              <label class="radio">municipality<input type="radio"></label>
+              <label class="radio">quasi-government<input type="radio"></label>
+              <label class="radio">non-profit<input type="radio"></label>
+              <label class="radio">privately held corporation<input type="radio"></label>
+              <label class="radio">publicly held corporation<input type="radio"></label>
+              <label class="radio">Other<input type="radio"></label>
+                <textarea rows="3" placeholder="Other type of organization"></textarea>
+          </div>
+        </div>
+
+
 
       </form> 
     
