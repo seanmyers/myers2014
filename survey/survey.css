@@ -1,3 +1,11 @@
 #survey-intro {
   padding-top: 2em;
 }
+
+.controls {
+  padding-bottom: 1em;
+}
+
+.legend-text {
+  line-height: 24px;
+}
