@@ -59,36 +59,76 @@
     <div class="container">
     
       <!-- SURVEY FORM  -->
-      <h2 id="survey-intro">
-          Please help us understand what small and medium sized service
-              providers would included in a geospatial mapping, planning, and
-              maintenance tool such as Vetro.</h2>
+      <h2 class="survey-header">
+          Thank you for helping us with this survey!i<hr></h2>
+      <h2 class="survey-intro">Our goal is to understand how GIS-based management tools can help service providers with the provisioning
+          and maintenance of their networks. We will use this information to help
+          define the features of Vetro. Your input is very much appreciated and
+          will be kept in the strictest confidence.</h2>
       
+      <!-- BEGINNING OF THE SURVEY FORM -->      
       <form>
+        
         <div class="form-group">
-          <legend class="legend-text">Please tell us how you would rank the
-                  importance of the following issues when planning a fiber expansion project
-                  (one indicates a low priority and three indicates a high priority).
+          <div class="controls">
+            <legend class="legend-text">1. Does your organization have plans
+                  to build fiber to the home/premise network in the coming year?</legend>
+            <label class="radio inline">YES<input type="radio"></label>
+            <label class="radio inline">NO<input type="radio"></label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <legend class="legend-text">2. Please tell us how you would rank the
+                  importance of the following issues (one=low priority, three
+                  =high priority).
                   </legend>
         
           <div class="controls">
-              <label>Being able to predict the estimated take rate of the project
-                      is important.</label>
+              <label> a.) I would like to be able to gather and analyze housing density and household demographics would
+              help estimate the "take rate" we can expect from a expansion project.</label>
               <label class="radio inline"><input type="radio">1</label>
               <label class="radio inline"><input type="radio">2</label>
               <label class="radio inline"><input type="radio">3</label>
           </div>
 
           <div class="controls">
-            <label>Being able to estimate the costs of design and construction
-                    is important</label>
+            <label>b.) I would like to compile map-based data of poles, estimated cable
+                    locations, location of COs, and other network features to help
+                    quickly estimate the costs of design and construction.</label>
             <label class="radio inline"><input type="radio">1</label>
             <label class="radio inline"><input type="radio">2</label>
             <label class="radio inline"><input type="radio">3</label>
           </div>
           
           <div class="controls">
-            <label>Knowing the availability of conduits and/or poles is important.</label>
+            <label>c.) I would like to be able to quickly determine the distance from
+            a potential customers location to the nearest POP (my POP or a partner's POP).</label>
+            <label class="radio inline"><input type="radio">1</label>
+            <label class="radio inline"><input type="radio">2</label>
+            <label class="radio inline"><input type="radio">3</label>
+          </div>
+          
+          <div class="controls">
+            <label>d.) I would like to see how fiber lines are spliced at splice
+                    closure points.</label>
+            <label class="radio inline"><input type="radio">1</label>
+            <label class="radio inline"><input type="radio">2</label>
+            <label class="radio inline"><input type="radio">3</label>
+          </div>
+          
+          <div class="controls">
+            <label>e.) I would want the GIS integrated with other systems I use
+                    (e.g. Salesforce.com, trouble ticket system, work order system).</label>
+            <label class="radio inline"><input type="radio">1</label>
+            <label class="radio inline"><input type="radio">2</label>
+            <label class="radio inline"><input type="radio">3</label>
+          </div>
+          
+          <div class="controls">
+            <label>f.) I would like the applcation to be public facing so I can show
+                  the status of our projects and gather information on perspective
+                  customers.</label>
             <label class="radio inline"><input type="radio">1</label>
             <label class="radio inline"><input type="radio">2</label>
             <label class="radio inline"><input type="radio">3</label>
@@ -96,15 +136,108 @@
 
           <div class="controls">
             <div>
-              <label>Other</label>
+              <label>g.) Other</label>
               <input type="text" placeholder="issue...">
             </div>
             <label class="radio inline"><input type="radio">1</label>
             <label class="radio inline"><input type="radio">2</label>
             <label class="radio inline"><input type="radio">3</label>
           </div>
+          
+          <div class="controls">
+            <div>
+              <label>h.) Are there any other issues you think are important to consider?</label>
+              <textarea rows="4" placeholder="Please use this space to add any addtional thoughts."></textarea>
+            </div>
+          </div>
 
         </div> <!-- FORM GROUP -->
+
+        <div class="form-group">
+          <div class="controls">
+            <legend class="legend-text">3. Do you partner with one or more providers
+                  for your projects?</legend>
+              <label class="radio inline">YES<input type="radio"></label>
+              <label class="radio inline">NO<input type="radio"></label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="controls">
+            <legend class="legend-text">4. Do you currently use Geographic Information
+                Systems (GIS) to help with any of the stages of a fiber expansion
+                project (e.g. design, costing, construction, and mainetnance)?</legend>
+            <label class="radio inline">YES<input type="radio"></label>
+            <label class="radio inline">NO<input type="radio"></label>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <div class="controls">
+            <legend class="legend-text">5. What GIS software do you use?</legend>
+              <label class="checkbox">Google Earth/Maps<input type="checkbox"></label>
+              <label class="checkbox">ESRI<input type="checkbox"></label>
+              <label class="checkbox">MapInfo<input type="checkbox"></label>
+              <label class="checkbox">N/A<input type="checkbox"></label>
+              <label class="checkbox">Other<input type="checkbox"></label>
+                <textarea rows="3" placeholder="Other uses of GIS"></textarea>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <div class="controls">
+            <legend class="legend-text">6. Describing your current spending on
+                mapping technology and activities, do you feel that your present
+                investment is:</legend>
+            <label class="radio">Inadequate and needs to grow<input type="radio"></label>
+            <label class="radio">At the right level<input type="radio"></label>
+            <label class="radio">Too high/costly for our organization<input type="radio"></label>
+            <label class="radio">N/A - we do not have any mapping spend<input type="radio"></label>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <div class="controls">
+            <legend class="legend-text">7. Would you consider using subscription-based
+                GIS where you would pay a monthly fee for use of the system?</legend>
+              <label class="radio inline">YES<input type="radio"></label>
+              <label class="radio inline">NO<input type="radio"></label>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <div class="controls">
+            <legend class="legend-text">8.) Does your organization employ dedicated
+                  GIS/mapping staff and/or have a GIS department?</legend>
+              <label class="radio inline">YES<input type="radio"></label>
+              <label class="radio inline">NO<input type="radio"></label>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <div class="controls">
+            <legend class="legend-text">9. How many miles of fiber do you currently maintain?</legend>
+              <label class="radio">< 250 miles<input type="radio"></label>
+              <label class="radio">250 miles to 1,000 miles<input type="radio"></label>
+              <label class="radio">1,000 miles to 5,000 miles<input type="radio"></label>
+              <label class="radio">> 5,000 miles<input type="radio"></label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="controls">
+            <legend class="legend-text">10. What category best describes your organization?</legend>
+              <label class="radio">municipality<input type="radio"></label>
+              <label class="radio">quasi-government<input type="radio"></label>
+              <label class="radio">non-profit<input type="radio"></label>
+              <label class="radio">privately held corporation<input type="radio"></label>
+              <label class="radio">publicly held corporation<input type="radio"></label>
+              <label class="radio">Other<input type="radio"></label>
+                <textarea rows="3" placeholder="Other type of organization"></textarea>
+          </div>
+        </div>
+
+
 
       </form> 
     

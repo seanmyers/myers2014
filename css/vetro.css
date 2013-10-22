@@ -329,6 +329,10 @@
 		  background: #a20e2d;
 	  }
 
+    .idea-btn:hover {
+		  background: #d8244a;
+    }      
+
       #survey-intro {
         font-family: Ubuntu, sans-serif;
         font-size: 1.8em;
