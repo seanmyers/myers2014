@@ -1,5 +1,7 @@
 #survey-intro {
   padding-top: 2em;
+  text-align: center;
+  padding-bottom: 1em;
 }
 
 .controls {
@@ -7,5 +9,11 @@
 }
 
 .legend-text {
+  font-size: 18px;
   line-height: 24px;
 }
+
+.form-group {
+  padding-bottom: 1em;
+}
+
