@@ -17,6 +17,7 @@
 			}
 			 .navbar-inverse .navbar-inner {
 				padding: 0 50px;
+				border-bottom: 1px solid #515d66 !important;
 			}
 			
 			.feature {
@@ -78,6 +79,10 @@
 			}
 			.linediv-l {
 				border-top: 1px white solid;
+			}
+			
+			 .navbar-inverse .navbar-inner {
+				border-bottom: 1px solid #515d66 !important;
 			}
 			
 			 img#big-bkgd {
@@ -143,21 +148,22 @@
       }
       
       .navbar-inverse .navbar-inner {
-	      background: #fff !important;
-		  border-bottom: none;
+	      background: #515d66 !important;
+		  border-bottom: 1px solid #515d66;
       }
       
       a.brand {
-	      color: #666 !important;
+	      color: #fff !important;
       }
       
       li a {
-	      color: #666 !important;
+	      color: #fff !important;
 	      text-shadow: none !important;
       }
       
       li.active a {
 	      background: #bbd5dd !important;
+	      color: #666 !important;
       }
       
       img#big-bkgd {
@@ -312,17 +318,20 @@
 
       .survey {
         background-color: #fff;
-        border: 1px solid #ccc;
         margin-right: 10px;
         border-radius: 7px;
         z-index: 20;
         position: relative;
         padding: 20px;
+        /*-moz-box-shadow:    0 3px 5px 6px #ccc;
+		-webkit-box-shadow: 0 3px 5px 6px #ccc;
+		box-shadow: 0 1px 8px 1px #555;*/
       }
 
 	  .idea-btn {
 		  background: #d8244a;
 		  font-size: 1.7em;
+		  width:	100%;
 	  }
 	  
 	  .idea-btn:hover {
@@ -344,6 +353,7 @@
       .disclaimer {
 	      font-size: .9em;
 	      line-height: normal;
+	      color: #666;
       }
 
       #go-survey {
@@ -375,6 +385,11 @@
         padding: 10px;
         line-height: 25px;
         color: #333;
+      }
+      
+      .read-more > a {
+	      color: #026792 !important;
+	      font-size: 1.3em;
       }
 
       .details {
@@ -600,4 +615,3 @@
 	-moz-box-shadow: 0 8px 6px -6px black;
 	box-shadow: 0 8px 6px -6px black;
 }*/
-
