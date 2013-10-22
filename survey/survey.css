@@ -1,5 +1,9 @@
-#survey-intro {
+.survey-header {
   padding-top: 2em;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.survey-intro {
   text-align: center;
   padding-bottom: 1em;
 }
