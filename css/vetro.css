@@ -10,6 +10,66 @@
 	        	border-left: 1px white solid;
 			}
 		}
+		
+		@media (max-width: 768px) {
+			body {
+				padding: 0;
+			}
+			 .navbar-inverse .navbar-inner {
+				padding: 0 50px;
+			}
+			
+			.feature {
+				padding: 0 30px;
+			}
+			
+			.survey {
+				width: 90% !important;
+				margin: 0 auto !important;
+				display: block !important;
+			}
+			
+			img#big-bkgd {
+				 margin-left: 	-200px;
+			 }
+			 
+			 .btn-large {
+				width: 70%;
+			}
+			
+			.disclaimer {
+				text-align: center;
+			}
+			
+			.quotetext,
+			#faq {
+				padding: 0 20px
+			}
+			
+			h3#faq {
+				padding: 0;
+			}
+			 
+			 .form-horizontal .controls {
+				  padding: 20px;
+				  display: block;
+				  width: 50%;
+			}
+						
+			.name-textbox,
+			.email-textbox {
+				display: inline-block;
+				width: 100% !important;
+				margin-bottom: 20px;
+			}
+			
+			 .name-textbox > .control-label,
+			 .email-textbox > .control-label {
+				 color: #fff;
+				 text-align: left;
+				 width: 20% !important;
+			 }
+		}
 
       /* Landscape phones and down */
       @media (max-width: 488px) {
@@ -40,7 +100,12 @@
 			
 			/* Form */
 			#input-form {
-				padding: 20px
+				padding: 20px;
+			}
+			
+			.form-horizontal .controls {
+				  display: block;
+				  width: 90%;
 			}
 			
 			label {
@@ -49,7 +114,26 @@
 			
 			.name-textbox,
 			.email-textbox {
-				margin-bottom: 10px;
+				margin-bottom: 20px;
+			}
+			
+			#inputName,
+			#inputEmail {
+				width: 95%;
+			}
+			
+			.btn-large {
+				width: 100%;
+			}
+			
+			.send-button > .span12 > .btn {
+				width: 90%;
+				margin-top: 15px;
+			}
+			
+			#contactme > a {
+				display: inline-block;
+				width: 100%;
 			}
 	    }
 
@@ -240,6 +324,10 @@
 		  background: #d8244a;
 		  font-size: 1.7em;
 	  }
+	  
+	  .idea-btn:hover {
+		  background: #a20e2d;
+	  }
 
       #survey-intro {
         font-family: Ubuntu, sans-serif;
@@ -369,7 +457,7 @@
     }
 
     .accordian-inner {
-	   padding: 0 0 20px 20px;
+	   padding: 0 50px 20px 20px;
 	   line-height: normal;
     }
 	  
@@ -379,12 +467,12 @@
 		 margin: 0;
 		 padding-top: 3%;
 		 z-index: 20;
-		  position: relative;
+		 position: relative;
 	  }
 	  
-    .form-horizontal .controls {
-      margin: auto;
-    }
+	  .form-horizontal .controls {
+      	margin: auto;
+	  }
 
 	  .name-textbox,
 	  .email-textbox {
