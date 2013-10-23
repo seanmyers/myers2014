@@ -203,11 +203,11 @@
       }
       
       .heading {
-	     background: #ccc;
-	     margin-top: -1.4em;
-	     padding-top: 2em;
-	     z-index: 20;
-		 position: relative;
+	      /* background: #ccc; */
+	      margin-top: -1.4em;
+	      padding-top: 2em;
+	      z-index: 20;
+		    position: relative;
 	 
       }
       
@@ -279,6 +279,7 @@
         position: relative;
 	    
       }
+
       p.quotetext {
         font-style: italic;
         font-family: sans-serif;
@@ -286,7 +287,7 @@
         text-align: left;
         line-height: 48px;
         line-height: 1.5em;
-        color: #888;
+        color: #026792;
         z-index: 20;
         position: relative;
       }
@@ -317,7 +318,7 @@
       }
 
       .survey {
-        background-color: #fff;
+        background-color: #ccc;
         margin-right: 10px;
         border-radius: 7px;
         z-index: 20;
@@ -447,7 +448,7 @@
     }
 
 	.faq-quote-container {
-		background: #fff;
+		background: #ccc;
 		z-index: 20;
 		position: relative;
 	}
