@@ -223,8 +223,8 @@
       
       .heading, subheading {
         font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
-	    text-align: center;
-	    z-index: 20;
+	      text-align: center;
+	      z-index: 20;
         position: relative;
       }
 
@@ -393,9 +393,19 @@
 	      font-size: 1.3em;
       }
 
-      .details {
-        margin-top: 40px;
+      .read-more-container {
+        padding-top: 20px;
       }
+
+      .details {
+        text-align: center;
+        padding-right: 30px;
+      }
+
+      .details > p {
+        text-align: center;
+      }
+        
       
       #details-list li {
         padding: 10px;
@@ -470,6 +480,7 @@
     
     a.accordian-toggle {
 	    color: #026792;
+      font-family: 'Open Sans', Helvetica, sans-serif;
     }
 
     .collapse {
