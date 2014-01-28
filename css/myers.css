@@ -1,14 +1,9 @@
-      /* Large Desktop */
-      @media (min-width: 980px) {
+    /* Large Desktop */
+    @media (min-width: 980px) {
 		  body {
 			  padding-top: 60px;
-	       }
-		   .linediv-l {
-			   border-right: 1px white solid;
+			  border-right: 1px white solid;
 			}  
-			.linediv-r {
-	        	border-left: 1px white solid;
-			}
 		}
 		
 		@media (max-width: 768px) {
@@ -24,24 +19,6 @@
 				padding: 0 30px;
 			}
 			
-			.survey {
-				width: 90% !important;
-				margin: 0 auto !important;
-				display: block !important;
-			}
-			
-			img#big-bkgd {
-				 margin-left: 	-200px;
-			 }
-			 
-			 .btn-large {
-				width: 70%;
-			}
-			
-			.disclaimer {
-				text-align: center;
-			}
-			
 			.quotetext,
 			#faq {
 				padding: 0 20px
@@ -50,140 +27,44 @@
 			h3#faq {
 				padding: 0;
 			}
-			 
-			 .form-horizontal .controls {
-				  padding: 20px;
-				  display: block;
-				  width: 50%;
-			}
-						
-			.name-textbox,
-			.email-textbox {
-				display: inline-block;
-				width: 100% !important;
-				margin-bottom: 20px;
-			}
-			
-			 .name-textbox > .control-label,
-			 .email-textbox > .control-label {
-				 color: #fff;
-				 text-align: left;
-				 width: 20% !important;
-			 }
 		}
 
-      /* Landscape phones and down */
-      @media (max-width: 488px) {
-        	.copy {
-				padding: 2.5% 10%;
-			}
-			.linediv-l {
-				border-top: 1px white solid;
+    /* Landscape phones and down */
+    @media (max-width: 488px) {
+      .copy {
+		  padding: 2.5% 10%;
 			}
 			
-			 .navbar-inverse .navbar-inner {
-				border-bottom: 1px solid #515d66 !important;
+		  .navbar-inverse .navbar-inner {
+		    border-bottom: 1px solid #515d66 !important;
 			}
-			
-			 img#big-bkgd {
-				 margin-left: 	-200px;
-			 }
-			
-			.image {
-				float: none !important;
-				margin: 0 !important;
-			}
-			
-			img {
-				margin: 0px auto;
-				display: block;
-			}
-			
-			.text-container > .feature-title {
-				text-align: center;
-			}
-			
-			/* Form */
-			#input-form {
-				padding: 20px;
-			}
-			
-			.form-horizontal .controls {
-				  display: block;
-				  width: 90%;
-			}
-			
-			label {
-				margin-right: 10px;
-			}
-			
-			.name-textbox,
-			.email-textbox {
-				margin-bottom: 20px;
-			}
-			
-			#inputName,
-			#inputEmail {
-				width: 95%;
-			}
-			
-			.btn-large {
-				width: 100%;
-			}
-			
-			.send-button > .span12 > .btn {
-				width: 90%;
-				margin-top: 15px;
-			}
-			
-			#contactme > a {
-				display: inline-block;
-				width: 100%;
-			}
-	    }
-
-      /* Main body and headings */      
-      body {
-        font-family: 'Open Sans', Helvetica,Arial,san-serif;		
-      }
-      
-      .navbar-inverse .navbar-inner {
-	      background: #515d66 !important;
-		  border-bottom: 1px solid #515d66;
-      }
-      
-      a.brand {
-	      color: #fff !important;
-      }
-      
-      li a {
-	      color: #fff !important;
-	      text-shadow: none !important;
-      }
-      
-      li.active a {
-	      background: #bbd5dd !important;
-	      color: #666 !important;
-      }
-      
-      img#big-bkgd {
-		  /* Set rules to fill background */
-		  min-height: 100%;
-		  min-width: 1024px;
-	
-		  /* Set up proportionate scaling */
-		  width: 100%;
-		  height: auto;
-	
-		  /* Set up positioning */
-		  position: absolute;
-		  top: 0;
-		  left: 0;
 	  }
 
+    /* Main body and headings */      
+    
+    body {
+        font-family: 'Open Sans', Helvetica,Arial,san-serif;		
+    }
+      
+    .navbar-inverse .navbar-inner {
+	    background: #515d66 !important;
+		  border-bottom: 1px solid #515d66;
+    }
+      
+    a.brand {
+	    color: #fff !important;
+    }
+      
+    .container {
+	    width: 100%;
+    }
 
-      .container {
-	      width: 100%;
+      .mainsection {
+        height: 350px;
+        background-image: url('/images/harbor.jpg');
+        background-size: 100% auto;
+        background-position: 0% 50%;
+        background-repeat: no-repeat;
       }
 
       h1 {
@@ -208,7 +89,6 @@
 	      padding-top: 2em;
 	      z-index: 20;
 		    position: relative;
-	 
       }
       
       #about {
@@ -228,56 +108,14 @@
         position: relative;
       }
 
-      ul {
-	      list-style: none;
-	      z-index: 20;
-		  position: relative;
-      }
-      
-      li.feature {
-	      text-align: left;
-	      margin: 0 0 10px 0;
-	      display: inline-block;
-	      width: 100%;
-      }
-      
-      .text-container {
-	      display: inline-block;
-	      width: 70%;
-	      padding: 0;
-	      margin: 0;
-      }
-      
-      .text-container > h3 {
-	      line-height: 1.3;
-	      margin-bottom: 3px;
-	      font-size: 1.3em;
-	      color:	#026792;
-      }
-      
-       .text-container > p {
-	      color:	#444;
-	      font-size: 1.2em;
-	      line-height: normal;
-      }
-      
-      .icon {
-	      display: block;
-	      width: 80px;
-	      height: 80px;
-	      float: left;
-	      margin-right: 20px;
-      }
-      
       p.lead {
         padding-top: 1.5%;
-	    text-align: center;
-	    font-size: 24px;
-	    line-height: 30px;
-	    color: #666;
-	    z-index: 20;
+	      text-align: center;
+	      font-size: 24px;
+	      line-height: 30px;
+	      color: #666;
+	      z-index: 20;
         position: relative;
-	    
       }
 
       p.quotetext {
@@ -294,72 +132,17 @@
       
       p {
         font-size: 18px;
-	    line-height: 24px;
-	    color: #333;
-	    text-align: left;
+	      line-height: 24px;
+	      color: #333;
+	      text-align: left;
       }	
   
-      /* Video pitch and action */
-      .pitch {
-	      padding: 2.5% 0%;
-      }
-
-      .section2 {
-	      background: #efefef;
-      }
-
       #aboutvetro {
         margin-top: 10px;
       }
 
-
       .order {
 	        border: 1px solid blue;
-      }
-
-      .survey {
-        background-color: #ccc;
-        margin-right: 10px;
-        border-radius: 7px;
-        z-index: 20;
-        position: relative;
-        padding: 20px;
-        /*-moz-box-shadow:    0 3px 5px 6px #ccc;
-		-webkit-box-shadow: 0 3px 5px 6px #ccc;
-		box-shadow: 0 1px 8px 1px #555;*/
-      }
-
-	  .idea-btn {
-		  background: #d8244a;
-		  font-size: 1.7em;
-		  width:	100%;
-	  }
-	  
-	  .idea-btn:hover {
-		  background: #a20e2d !important;
-	  }
-
-    .idea-btn:hover {
-		  background: #d8244a;
-    }      
-
-      #survey-intro {
-        font-family: Ubuntu, sans-serif;
-        font-size: 1.8em;
-        line-height: normal;
-        text-align: center;
-        color: #333;
-      }
-      
-      .disclaimer {
-	      font-size: .9em;
-	      line-height: normal;
-	      color: #666;
-      }
-
-      #go-survey {
-        text-align: center;
-        margin-top: 20px;
       }
 
       .borderbox {
@@ -369,99 +152,12 @@
         border-radius: 5px;
       }
 	  
-      .video, .thermometer, .order, .social, .statistics {
-        text-align: center;
-      }
-      .statistics h3, .statistics p {
-        color: white;
-      }
-
-      #pitch-list {
-        font-size: 18px;
-        font-weight: bold;
-      }
-
-
-      #pitch-list li {
-        padding: 10px;
-        line-height: 25px;
-        color: #333;
-      }
-      
-      .read-more > a {
-	      color: #026792 !important;
-	      font-size: 1.3em;
-      }
-
-      .read-more-container {
-        padding-top: 20px;
-      }
-
-      .details {
-        text-align: center;
-        padding-right: 30px;
-      }
-
-      .details > p {
-        text-align: center;
-      }
-        
-      
-      #details-list li {
-        padding: 10px;
-        line-height: 25px;
-        color: #333;
-      }
-
-    /* Feature Boxes */
-
-    #features {
-      margin-top: 10%;
-      padding-bottom: 5%;
-    }
-
-    .feature-box {
-      padding-right: 1%;
-    }
-
-    .feature-image {
-      text-align: left;
-      height: 200px;
-      width: 250px;
-    }
-
-    .feature-title {
-      font-family: Ubuntu,sans-serif;
-      color: #2288b4; 
-      text-align: left;
-      font-size: 1.75em;
-      margin-top: 20px;
-      line-height: 30px;
-    }
-
-    .feature-content {
-      margin-top: 10px; 
-      font-size: 1.5em;
-      text-align: left;
-    }
-
-    .feature-button {
-      text-align: left;
-      font-size: 1.5em;
-    }
-
-    .feature-button a:link,
-    .feature-button a:visited,
-    .feature-button a:hover {
-      color: #939393;
-      text-decoration: none;
-    }
-
-	.faq-quote-container {
-		background: #ccc;
-		z-index: 20;
-		position: relative;
-	}
+	  .faq-quote-container {
+		  background: #ccc;
+		  z-index: 20;
+		  position: relative;
+	  }
+    
     /* QUOTE */ 
     #quote {
       margin-top: 70px;
@@ -505,125 +201,30 @@
       	margin: auto;
 	  }
 
-	  .name-textbox,
-	  .email-textbox {
-		  width: 35%;
-		  padding: 0;
-	  }
-	  
-	  .name-textbox > .control-label,
-	  .email-textbox > .control-label {
-		  color: #fff;
-		  text-align: left;
-		  width: 20%;
-	  }
+    .footer {
+      background: #000;
+      color: #cccccc;
+      text-align: center;
+      z-index: 20;
+		  position: relative;
+    }
 
-    .send-button {
-      margin: 2% 0 1%;
+    .footer p {
+      font-size: 11px;
+      color: #ccccff;
       text-align: center;
     }
-	  
-    /* Marketing and Copy Footer */
-    .modules-text > p {
-	    text-align: center;
-	    font-weight: bold;
-	    font-size: 1.5em;
-	    color: #2babe2;
+    
+    .footer a {
+      color: #ffffff;
     }
 
-    .modules-text > ol > li {
-	    font-size: 1.2em;
+    div.addthis_toolbox {
+      width: 188px;
+      margin: 0 auto;
     }
-
-      .copy {
-        padding-top: 2.5%;
-        padding-bottom: 2.5%;
-        text-align: justify;
-      }
-
-      .copy-right {
-	   	  padding: 30px;
-      }
-
-      .asset {
-        padding: 2.5% 0%;
-      }
-
-      .contact {
-	      background: #000;
-	      padding-bottom: 1%;
-      }
-
-      .contact > .span12 > p {
-	     text-align: center;
-	     color: #888;
-      }
-      
-       .error-message {
-         display: none;
-         text-align: center;
-         color: #f00;
-      }
-      input.error-text-box {
-         outline: none;
-         background: #faa;
-         border: 2px solid #d00;
-      }
-      #success {
-          display: none;
-          color: #2babe2;
-          text-align: center;
-      }
-      #server-noresponse {
-          display: none;
-          color: #2babe2;
-          text-align: center;
-      }
-
-      .footer {
-      	background: #000;
-        color: #cccccc;
-        text-align: center;
-        z-index: 20;
-		    position: relative;
-      }
-
-      .footer p {
-        font-size: 11px;
-        color: #ccccff;
-        text-align: center;
-      }
-      .footer a {
-        color: #ffffff;
-      }
-
-      div.addthis_toolbox {
-        width: 188px;
-        margin: 0 auto;
-      }
       
       .copyright > p > span {
 	      color: #666;
 	      margin: 0 10px;
       }
-      
-
-/***** INNER PAGE *****/
-#more-info {
-	background: #fff;
-}/*more-info*/
-
-.info-box {
-	margin-bottom: 30px;
-}/*info-1*/
-
-.image {
-	float: left;
-	margin: 20px;
-}
-
-/*img {
-	-webkit-box-shadow: 0 8px 6px -6px black;
-	-moz-box-shadow: 0 8px 6px -6px black;
-	box-shadow: 0 8px 6px -6px black;
-}*/
