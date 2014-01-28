@@ -1,5 +1,5 @@
-      /* Large Desktop */
-      @media (min-width: 980px) {
+    /* Large Desktop */
+    @media (min-width: 980px) {
 		  body {
 			  padding-top: 60px;
 			  border-right: 1px white solid;
@@ -29,33 +29,42 @@
 			}
 		}
 
-      /* Landscape phones and down */
-      @media (max-width: 488px) {
-        .copy {
-				padding: 2.5% 10%;
-			  }
+    /* Landscape phones and down */
+    @media (max-width: 488px) {
+      .copy {
+		  padding: 2.5% 10%;
+			}
 			
-			 .navbar-inverse .navbar-inner {
-				border-bottom: 1px solid #515d66 !important;
-			  }
-	    }
+		  .navbar-inverse .navbar-inner {
+		    border-bottom: 1px solid #515d66 !important;
+			}
+	  }
 
-      /* Main body and headings */      
-      body {
+    /* Main body and headings */      
+    
+    body {
         font-family: 'Open Sans', Helvetica,Arial,san-serif;		
-      }
+    }
       
-      .navbar-inverse .navbar-inner {
-	      background: #515d66 !important;
+    .navbar-inverse .navbar-inner {
+	    background: #515d66 !important;
 		  border-bottom: 1px solid #515d66;
-      }
+    }
       
-      a.brand {
-	      color: #fff !important;
-      }
+    a.brand {
+	    color: #fff !important;
+    }
       
-      .container {
-	      width: 100%;
+    .container {
+	    width: 100%;
+    }
+
+      .mainsection {
+        height: 350px;
+        background-image: url('/images/harbor.jpg');
+        background-size: 100% auto;
+        background-position: 0% 50%;
+        background-repeat: no-repeat;
       }
 
       h1 {
@@ -80,7 +89,6 @@
 	      padding-top: 2em;
 	      z-index: 20;
 		    position: relative;
-	 
       }
       
       #about {
