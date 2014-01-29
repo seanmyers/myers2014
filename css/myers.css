@@ -60,24 +60,28 @@
     }
 
       .mainsection {
-        height: 350px;
-        background-image: url('/images/main_chippewa_1960s.jpg');
-        background-size: 980px; auto;
+        height: 500px;
+        background: #e5e5e5;
+        background-image: url('/images/myers.jpg');
+        background-size: 100%; auto;
         background-position: center 75%;
         background-repeat: no-repeat;
       }
 
       h1 {
         font-size: 60px;
-        color: #026792;
+        margin-top: 90px;
+        text-shadow: 1px 0px 5px #000;
+        color: #fff;
         z-index: 20;
         position: relative;
       }
       
       h2 {
         font-size: 32px;
+        text-shadow: 1px 0px 5px #000;
         font-family: Ubuntu, sans-serif;
-        color: #2babe2;
+        color: #000;
         text-align: center;
         z-index: 20;
         position: relative;
@@ -109,11 +113,12 @@
       }
 
       p.lead {
-        padding-top: 1.5%;
+        /*padding-top: 1.5%;*/
+        text-shadow: 1px 0px 5px #000;
 	      text-align: center;
-	      font-size: 24px;
+	      font-size: 32px;
 	      line-height: 30px;
-	      color: #666;
+	      color: #fff;
 	      z-index: 20;
         position: relative;
       }
