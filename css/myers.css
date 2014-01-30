@@ -86,6 +86,10 @@
         z-index: 20;
         position: relative;
       }
+
+      .statement {
+        background: #a5cfa5;
+      }
       
       .heading {
 	      /* background: #ccc; */
@@ -123,18 +127,26 @@
         position: relative;
       }
 
-      p.quotetext {
+      p.definition {
+        font-family: sans-serif;
         font-style: italic;
+        font-size: 2.0em;
+        text-align: left;
+        line-height: 1.0em;
+        color: #000;
+        position: relative;
+      }
+      
+      p.introtext {
         font-family: sans-serif;
         font-size: 1.3em;
         text-align: left;
         line-height: 48px;
         line-height: 1.5em;
-        color: #026792;
-        z-index: 20;
+        color: #000;
         position: relative;
       }
-      
+
       p {
         font-size: 18px;
 	      line-height: 24px;
@@ -146,10 +158,6 @@
         margin-top: 10px;
       }
 
-      .order {
-	        border: 1px solid blue;
-      }
-
       .borderbox {
         margin-top: 40px;
         -webkit-border-radius: 5px;
@@ -157,23 +165,11 @@
         border-radius: 5px;
       }
 	  
-	  .faq-quote-container {
-		  background: #ccc;
-		  z-index: 20;
+	  .information {
+		  background: #fff;
 		  position: relative;
 	  }
     
-    /* QUOTE */ 
-    #quote {
-      margin-top: 70px;
-      margin-bottom: 40px;
-    }
-
-    /*FAQ*/
-    #faq {
-      margin-top: 20px;
-    }
-
     .accordian-heading {
 	    font-size: 1.2em;
 	    margin-bottom: 20px;
