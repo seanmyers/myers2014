@@ -19,10 +19,6 @@
 				padding: 0 30px;
 			}
 			
-			.quotetext,
-			#faq {
-				padding: 0 20px
-			}
 		}
 
     /* Landscape phones and down */
@@ -154,7 +150,23 @@
 	      color: #333;
 	      text-align: left;
       }	
-  
+      
+			p.scheduletext {
+				padding: 0 20px
+        font-size: 20px;
+	      line-height: 24px;
+	      color: #000;
+
+			}
+
+      li {
+        font-size: 18px;
+        font-family: sans-serif;
+        line-height: 30px;
+        color: #000;
+        margin-bottom: 20px;
+      }
+
       #aboutvetro {
         margin-top: 10px;
       }
@@ -189,6 +201,7 @@
     .accordian-inner {
 	   padding: 0 50px 20px 20px;
 	   line-height: normal;
+     color: #666666;
     }
 	  
 	  /*FORM*/
