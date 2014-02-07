@@ -10,6 +10,12 @@
 			body {
 				padding: 0;
 			}
+
+      .navbar-inverse .navbar-inner {
+        padding: 0 50px;
+        border-bottom: 1px solid #515d66 !important;
+      }
+
 			.feature {
 				padding: 0 30px;
 			}
@@ -29,9 +35,21 @@
     }
       
     .navbar-inverse .navbar-inner {
-	    background: #464C3E;
+	    background: #5C6C6B;
+      border-bottom: 1px solid #515d66i !important;;
+      height: 50px;
     }
-      
+
+     .navbar-inverse .brand, .navbar-inverse .nav>li>a {
+      color: #f4f4f4;
+      text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+     }
+
+    a.brand {
+      color: #000;
+      padding-top: 15px !important;
+    }
+
     .container {
 	    width: 100%;
     }
@@ -64,12 +82,23 @@
         position: relative;
       }
 
+      h2#reuniontext {
+        margin-top: 50px;
+        font-size: 32px;
+        font-family: Ubuntu, sans-serif;
+        color: #000;
+        text-align: center;
+        z-index: 20;
+        position: relative;
+      }
+
       h2#faqtext {
+        margin-top: 50px;
         text-align: left;
       }
 
       .statement {
-        background: #606D5B;
+        background: #fafafa;
       }
       
       .heading {
@@ -114,7 +143,7 @@
         text-align: left;
         line-height: 1.5em;
         font-size: 1.75em;
-        color: #fff;
+        color: #000;
         position: relative;
       }
       
@@ -125,7 +154,7 @@
         text-align: left;
         line-height: 48px;
         line-height: 1.5em;
-        color: #fff;
+        color: #000;
         position: relative;
       }
 
@@ -140,7 +169,7 @@
 				padding: 0 20px
         font-size: 20px;
 	      line-height: 24px;
-	      color: #000;
+	      color: #f000;
 
 			}
 
@@ -164,8 +193,7 @@
       }
 	  
 	  .information {
-		  background: #fff;
-      margin-top: 50px;
+		  background: #E6E5CD;
 		  position: relative;
 	  }
     
