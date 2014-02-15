@@ -216,7 +216,22 @@
 	   line-height: normal;
      color: #666666;
     }
-	  
+
+	  .buffalo {
+		  background: #e5e5e5;
+		  position: relative;
+	  }
+
+    h2#buffalotext {
+      margin-top: 50px;
+      font-size: 32px;
+      font-family: Ubuntu, sans-serif;
+      color: #000;
+      text-align: center;
+      z-index: 20;
+      position: relative;
+      }
+
 	  /*FORM*/
 	  .form-bkgrd {
 		 background: #000;
