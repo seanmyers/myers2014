@@ -218,9 +218,17 @@
     }
 
 	  .buffalo {
-		  background: #e5e5e5;
-		  position: relative;
+		  background: #fafafa;
 	  }
+
+		p.buffalosubtext {
+				padding: 0 20px
+        font-size: 20px;
+	      line-height: 24px;
+	      color: #f000;
+        text-align: center;
+
+			}
 
     h2#buffalotext {
       margin-top: 50px;
@@ -231,6 +239,19 @@
       z-index: 20;
       position: relative;
       }
+
+
+    h3#buffalothings {
+      font-family: Ubuntu, sans-serif;
+      color: #000;
+      }
+
+    #video {
+      margin-top: 50px;
+      height: 500px;
+      width: 100%;
+    }
+
 
 	  /*FORM*/
 	  .form-bkgrd {
