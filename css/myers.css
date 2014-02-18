@@ -192,9 +192,10 @@
         border-radius: 5px;
       }
 	  
-	  .information {
+	  #information {
 		  background: #E6E5CD;
 		  position: relative;
+      padding: 5px 0px 30px 0px;
 	  }
     
     .accordian-heading {
@@ -217,8 +218,9 @@
      color: #666666;
     }
 
-	  .buffalo {
+	  #buffalo {
 		  background: #fafafa;
+      padding: 5px 0px 30px 0px;
 	  }
 
 		p.buffalosubtext {
@@ -231,7 +233,7 @@
 			}
 
     h2#buffalotext {
-      margin-top: 50px;
+      margin-top: 55px;
       font-size: 32px;
       font-family: Ubuntu, sans-serif;
       color: #000;
