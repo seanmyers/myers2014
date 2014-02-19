@@ -58,7 +58,7 @@
       height: 500px;
       background: #e5e5e5;
       background-image: url('https://s3.amazonaws.com/Myers2014/Myers.jpg');
-      background-size: cover; <!-- 100%; auto; -->
+      background-size: cover;
       background-position: center 75%;
       background-repeat: no-repeat;
     }
